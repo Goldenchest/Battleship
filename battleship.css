@@ -1,0 +1,191 @@
+/* Created by Gary Chien */
+
+body {
+	/*background: url(http://www.listofimages.com/wp-content/uploads/2012/05/ocean-sea-military-us-navy-ships-navy-united.jpg);*/
+	background: url(http://images8.alphacoders.com/292/292379.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	color: white;
+	font-family: arial;
+	overflow: scroll;
+}
+
+h1 {
+	font-family: impact;
+	color: yellow;
+	text-align: center;
+	position: relative;
+	#left: 30%;
+	font-size: 650%;
+	text-shadow: 5px 5px 5px #FF0000;
+}
+
+div {
+	display: inline-block;
+}
+
+#playerGrid {
+	position: relative;
+	bottom: 0%;
+	left: 15%;
+	padding: 25px;
+}
+
+p.grid_title {
+	font-size: 1.4em;
+	color: red;
+	text-align: center;
+	position: relative;
+	left: 0%;
+	font-weight: bold;
+}
+
+#computerGrid {
+	position: relative;
+	bottom: 0%;
+	right: -20%;
+	padding: 25px;
+}
+
+#player_label {
+	display: inline-block;
+	position: absolute;
+	left: 25%;
+	top: 8em;
+	color: yellow;
+}
+
+#computer_label {
+	display: inline-block;
+	position: absolute;
+	left: 62%;
+	top: 8em;
+	color: yellow;
+}
+
+.game_over_popup {
+	height: 15vw;
+	width: 30vw;
+	border-radius: 30px;
+	border-width: 5px;
+	border-style: solid;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 50;
+}
+
+.game_over_popup p {
+	margin: 0;
+	font-size: 5em;
+	font-family: impact;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+}
+
+#victory {
+	background: linear-gradient(to left, #CC0000, #ED6912);
+	border-color: #FFCC00;
+}
+
+#victory p {
+	color: #FFCC00;
+}
+
+#defeat {
+	background: linear-gradient(to left, #00CC66, #006600);
+	border-color: #FFFF00;
+}
+
+#defeat p {
+	color: #FFCC00;
+}
+
+.cell {
+	#height: 20px;
+	#width: 20px;
+	height: 1.1vw;
+	width: 1.1vw;
+	padding: 15px;
+	border-radius: 3px;
+	background-color: grey;
+	border-style: solid;
+	border-width: 2px;
+	border-color: black;
+	vertical-align: middle;
+	position: relative;
+	z-index: 10;
+}
+
+.player {
+	background-color: green;
+	opacity: 0.9;
+}
+
+.computer {
+	background-color: blue;
+	opacity: 0.9;
+	z-index: 10;
+}
+
+.label {
+	opacity: 0.9;
+	border-width: 1px;
+	padding: 16px;
+	text-align: center;
+	vertical-align: middle;
+	background-color: #70709C;
+	z-index: 10;
+}
+
+.highlight {
+	background-color: yellow;
+}
+
+.hidden {
+	opacity: 0.8;
+	background-color: #000066;
+}
+
+.hit {
+	opacity: 1.0;
+	background-color: red;
+}
+
+.miss {
+	opacity: 0.5;
+	background-color: cyan;
+}
+
+.ship {
+	z-index: -10;
+	position: absolute;
+	background-color: #CC0000;
+	height: 30px;
+	width: 30px;
+	border-radius: 5px;
+	border-style: solid;
+	border-width: 5px;
+	border-color: orange;
+	top: 5px;
+	left: 5px;
+}
+
+.carrierVertical {
+	height: 150px;
+	width: 30px;
+	top: 12px;
+	left: 12px;
+}
+
+p .right {
+	text-align: right;
+}
